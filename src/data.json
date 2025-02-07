@@ -1,0 +1,67 @@
+{
+  "points": [100, 200, 300, 400, 500],
+  "categories": [
+    {
+      "name": "Category 1",
+      "id": 1,
+      "questions": [
+        {
+          "id": 100,
+          "question": "Question 1",
+          "answer": "Answer 1"
+        },
+        {
+          "id": 200,
+          "question": "Question 2",
+          "answer": "Answer 2"
+        },
+        {
+          "id": 300,
+          "question": "Question 3",
+          "answer": "Answer 3"
+        },
+        {
+          "id": 400,
+          "question": "Question 4",
+          "answer": "Answer 4"
+        },
+        {
+          "id": 500,
+          "question": "Question 5",
+          "answer": "Answer 5"
+        }
+      ]
+    },
+    {
+      "name": "Category 2",
+      "id": 2,
+      "questions": [
+        {
+          "id": 100,
+          "question": "Question 1",
+          "answer": "Answer 1"
+        },
+        {
+          "id": 200,
+          "question": "Question 2",
+          "answer": "Answer 2"
+        },
+        {
+          "id": 300,
+          "question": "Question 3",
+          "answer": "Answer 3"
+        },
+        {
+          "id": 400,
+          "question": "Question 4",
+          "answer": "Answer 4"
+        },
+        {
+          "id": 500,
+          "question": "Question 5",
+          "answer": "Answer 5"
+        }
+      ]
+    }
+  ]
+}
