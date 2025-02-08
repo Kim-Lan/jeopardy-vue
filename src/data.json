@@ -8,11 +8,16 @@
         {
           "id": 100,
           "question": "Question 1",
+          "image": {
+            "src": "https://picsum.photos/200",
+            "alt": "Image Alt Text"
+          },
           "answer": "Answer 1"
         },
         {
           "id": 200,
           "question": "Question 2",
+          "audio": "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
           "answer": "Answer 2"
         },
         {

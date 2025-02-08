@@ -29,6 +29,8 @@ function toggleAnswer() {
     <Button @click="$router.back()">Back</Button>
     <h1>Category {{ categoryId }}, {{ questionId }} Points</h1>
     <h2>{{ question.question }}</h2>
+    <img v-if="question.image" :src="question.image.src" :alt="question.image.alt" />
+    <audio v-if="question.audio" :src="question.audio" controls></audio>
     <Button @click="toggleAnswer">
       <span v-if="!isAnswerVisible">Show</span>
       <span v-else>Hide</span>
