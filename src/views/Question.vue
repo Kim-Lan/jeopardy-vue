@@ -4,19 +4,26 @@ import Button from '@/components/Button.vue'
 import sourceData from '@/data.json'
 
 const props = defineProps<{
+  slug: string,
   categoryId: number,
   questionId: number,
 }>();
 
 onBeforeMount(() => getQuestion())
 
+const category = ref(null);
 const question = ref(null);
 
 const isAnswerVisible = ref(false);
 
 function getQuestion() {
-  const category = sourceData.categories.filter((c) => c.id === props.categoryId)[0];
-  question.value = category.questions.filter((q) => q.id === props.questionId)[0];
+  if (props.slug === 'final-jeopardy') {
+    category.value = sourceData.finalJeopardy;
+    question.value = category.value.questions[0];
+  } else {
+    category.value = sourceData.categories.filter((c) => c.id === props.categoryId)[0];
+    question.value = category.value.questions.filter((q) => q.id === props.questionId)[0];
+  }
 }
 
 function toggleAnswer() {
@@ -27,8 +34,8 @@ function toggleAnswer() {
 <template>
   <main>
     <Button @click="$router.back()">Back</Button>
-    <h1>Category {{ categoryId }}, {{ questionId }} Points</h1>
-    <h2>{{ question.question }}</h2>
+    <h2>{{ category.name }}, {{ questionId }} Points</h2>
+    <h3>{{ question.question }}</h3>
     <img v-if="question.image" :src="question.image.src" :alt="question.image.alt" />
     <audio v-if="question.audio" :src="question.audio" controls></audio>
     <Button @click="toggleAnswer">

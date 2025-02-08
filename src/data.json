@@ -3,6 +3,7 @@
   "categories": [
     {
       "name": "Category 1",
+      "slug": "category-1",
       "id": 1,
       "questions": [
         {
@@ -39,6 +40,7 @@
     },
     {
       "name": "Category 2",
+      "slug": "category-2",
       "id": 2,
       "questions": [
         {
@@ -67,6 +69,114 @@
           "answer": "Answer 5"
         }
       ]
+    },
+    {
+      "name": "Category 3",
+      "slug": "category-3",
+      "id": 3,
+      "questions": [
+        {
+          "id": 100,
+          "question": "Question 1",
+          "answer": "Answer 1"
+        },
+        {
+          "id": 200,
+          "question": "Question 2",
+          "answer": "Answer 2"
+        },
+        {
+          "id": 300,
+          "question": "Question 3",
+          "answer": "Answer 3"
+        },
+        {
+          "id": 400,
+          "question": "Question 4",
+          "answer": "Answer 4"
+        },
+        {
+          "id": 500,
+          "question": "Question 5",
+          "answer": "Answer 5"
+        }
+      ]
+    },
+    {
+      "name": "Category 4",
+      "slug": "category-4",
+      "id": 4,
+      "questions": [
+        {
+          "id": 100,
+          "question": "Question 1",
+          "answer": "Answer 1"
+        },
+        {
+          "id": 200,
+          "question": "Question 2",
+          "answer": "Answer 2"
+        },
+        {
+          "id": 300,
+          "question": "Question 3",
+          "answer": "Answer 3"
+        },
+        {
+          "id": 400,
+          "question": "Question 4",
+          "answer": "Answer 4"
+        },
+        {
+          "id": 500,
+          "question": "Question 5",
+          "answer": "Answer 5"
+        }
+      ]
+    },
+    {
+      "name": "Category 5",
+      "slug": "category-5",
+      "id": 5,
+      "questions": [
+        {
+          "id": 100,
+          "question": "Question 1",
+          "answer": "Answer 1"
+        },
+        {
+          "id": 200,
+          "question": "Question 2",
+          "answer": "Answer 2"
+        },
+        {
+          "id": 300,
+          "question": "Question 3",
+          "answer": "Answer 3"
+        },
+        {
+          "id": 400,
+          "question": "Question 4",
+          "answer": "Answer 4"
+        },
+        {
+          "id": 500,
+          "question": "Question 5",
+          "answer": "Answer 5"
+        }
+      ]
     }
-  ]
+  ],
+  "finalJeopardy": {
+    "name": "Final Jeopardy",
+    "slug": "final-jeopardy",
+    "id": 6,
+    "questions": [
+      {
+        "id": 1000,
+        "question": "Final Jeopardy Question",
+        "answer": "Final Jeopardy Answer"
+      }
+    ]
+  }
 }

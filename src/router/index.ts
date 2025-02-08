@@ -10,10 +10,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/question/:categoryId/:questionId',
+      path: '/:categoryId/:slug/:questionId',
       name: 'question',
       component: () => import('../views/Question.vue'),
       props: route => ({
+        ...route.params,
         categoryId: parseInt(route.params.categoryId),
         questionId: parseInt(route.params.questionId)
       }),
