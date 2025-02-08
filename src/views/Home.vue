@@ -21,20 +21,24 @@ function resetVisited() {
 <template>
   <main>
     <table class="text-center border-1 border-gray-200 border-collapse">
-      <tr>
-        <th class="p-2 border-1 border-gray-200" v-for="category in sourceData.categories">{{ category.name }}</th>
-      </tr>
-      <tr v-for="questionId in sourceData.points">
-        <td class="p-2 border-1 border-gray-200" v-for="category in sourceData.categories">
-          <RouterLink
-            :to="{ name: 'question', params: { categoryId: category.id, questionId} }"
-            @click="addVisited(category.id, questionId)"
-            :class="{ visited: isVisited(category.id, questionId) }"
-          >
-            {{ questionId }}
-          </RouterLink>
-        </td>
-      </tr>
+      <thead>
+        <tr>
+          <th class="p-2 border-1 border-gray-200" v-for="category in sourceData.categories">{{ category.name }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="questionId in sourceData.points">
+          <td class="p-2 border-1 border-gray-200" v-for="category in sourceData.categories">
+            <RouterLink
+              :to="{ name: 'question', params: { categoryId: category.id, questionId} }"
+              @click="addVisited(category.id, questionId)"
+              :class="{ visited: isVisited(category.id, questionId) }"
+            >
+              {{ questionId }}
+            </RouterLink>
+          </td>
+        </tr>
+      </tbody>
     </table>
     <Button @click="resetVisited">Reset</Button>
   </main>
