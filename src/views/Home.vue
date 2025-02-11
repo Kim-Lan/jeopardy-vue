@@ -40,6 +40,7 @@ function getFinalJeopardyParams() {
               :to="{ name: 'question', params: { categoryId: category.id, slug: category.slug, questionId} }"
               @click="addVisited(category.id, questionId)"
               :class="{ visited: isVisited(category.id, questionId) }"
+              class="hover:text-gray-400"
             >
               {{ questionId }}
             </RouterLink>

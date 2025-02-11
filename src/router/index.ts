@@ -19,6 +19,11 @@ const router = createRouter({
         questionId: parseInt(route.params.questionId)
       }),
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@/views/NotFound.vue')
+    },
   ],
 })
 
