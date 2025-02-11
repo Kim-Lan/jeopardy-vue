@@ -68,5 +68,6 @@ function getFinalJeopardyParams() {
 <style scoped>
 .visited {
   text-decoration: line-through;
+  color: var(--color-gray-400);
 }
 </style>
